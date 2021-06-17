@@ -23,7 +23,7 @@ Crie uma função que adicione um valor à variável criada acima, e retorne a s
     O valor da variável agora é VALOR.
 Onde VALOR é o novo valor da variável.
 */
-function addValue(B){
+function addValue(){
     B = 5;
     return `O valor da variável agora é ${B}.`
 }
@@ -43,7 +43,7 @@ Crie uma função com as seguintes características:
 */
 function mult(x,y,z){
     if(x && y && z){
-        return x*y*z;
+        return x*y*z + 2;
     }
     return 'Preencha todos os valores corretamente!'
 }
