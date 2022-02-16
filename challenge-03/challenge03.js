@@ -20,11 +20,11 @@ const pessoa = {
     nome:'Tarcísio',
     sobrenome:'Carvalho',
     sexo:'Masculino',
-    idade:1,
+    idade:30,
     altura:1.69,
     peso:70,
     andando: false,
-    caminhouQuantosMentros:0
+    caminhouQuantosMentros:2
 }
 
 /*

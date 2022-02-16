@@ -109,11 +109,11 @@ carro.addpessoas = function(passageiros){
     
 
     
-    if(passageiros>(carro.assentos-carro.quantidadedePessoas)) return `Só cabem mais ${carro.assentos - carro.quantidadedePessoas} ${quantidade}`
+    if(passageiros>(carro.assentos-carro.quantidadedePessoas)) return `Só cabem mais ${carro.assentos - carro.quantidadedePessoas} ${carro.quantidadedePessoas===1?'Pessoas':'Pessoa'}`
     carro.quantidadedePessoas +=passageiros
     if(carro.quantidadedePessoas === carro.assentos) return 'O carro já está cheio';
     if (carro.quantidadedePessoas ===0) quantidade = 'pessoa';
-    return`Já temos ${carro.quantidadedePessoas} ${quantidade} no carro`;
+    return`Já temos ${carro.quantidadedePessoas} ${carro.quantidadedePessoas===1?'Pessoa':'Pessoas'} no carro`;
 }
 
 
@@ -162,3 +162,4 @@ console.log(carro.addpessoas(10));
 // Quantas pessoas temos no carro?
 //1
 //```
+console.log(carro.addpessoas(-1));
