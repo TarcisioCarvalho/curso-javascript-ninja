@@ -40,10 +40,10 @@
         var number1 = 40;
         console.log( 'A soma de 40 e 50 é igual a', sum() );
         console.log( 'Na função myFunction3, number1 é igual a', number1 );
+        return sum();
         function sum() {
             return number1 + number2;
         }
-        return sum();
     }
     myFunction3();
 
@@ -122,4 +122,6 @@
         return x%y;
     }) );
     // ?
+
+    console.log(typeof(null))
 })()
