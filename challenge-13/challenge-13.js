@@ -8,7 +8,7 @@ Envolva todo o código desse desafio em uma IIFE.
     */
     console.log( 'O array em formato de string é:' );
     // ?
-    let arr = []
+    console.log([1,2,3,4,5].toString());
     /*
     Crie 2 arrays `sul` e `sudeste`, que serão as regiões do Brasil.
     Cada array deve conter os estados dessa região.
